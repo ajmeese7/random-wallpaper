@@ -1,0 +1,22 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Random background images from Unsplash",
+	"file" : "index.html",
+	"general" :
+	{
+		"properties" :
+		{
+			"random" :
+			{
+				"text" : "New photo",
+				"type" : "bool",
+				"value" : true
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Abstract" ],
+	"title" : "Random Wallpaper",
+	"type" : "web",
+	"visibility" : "public"
+}

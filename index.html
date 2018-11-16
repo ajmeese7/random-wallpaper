@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="randomWallpaper.js"></script>
+    <script src="wp-engine.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: black;
+        overflow: hidden;
+      }
+
+      #container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #image {
+        margin: auto;
+        vertical-align: middle;
+        margin-bottom: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img id="image" />
+    </div>
+  </body>
+</html>
