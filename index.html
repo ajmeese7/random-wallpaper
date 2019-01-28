@@ -5,6 +5,8 @@
     <!-- TODO: Make fancy color picker for scheme from image background -->
     <script src="randomWallpaper.js"></script>
     <script src="wp-engine.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
       * {
         margin: 0;
@@ -22,18 +24,43 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
       }
 
-      #image {
+      #canvas {
         margin: auto;
         vertical-align: middle;
         margin-bottom: 1em;
+        z-index: -99;
+      }
+
+      /* Style buttons */
+      .btn {
+         background-color: DodgerBlue;
+         border: none;
+         border-radius: 50%;
+         color: white;
+         padding: 10px 12px;
+         cursor: pointer;
+         font-size: 20px;
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         margin-left: 4px;
+         margin-bottom: 22px;
+      }
+
+      /* Darker background on mouse-over */
+      .btn:hover {
+        background-color: RoyalBlue;
       }
     </style>
   </head>
   <body>
     <div id="container">
-      <img id="image" />
+      <a class="btn" id="button"><i class="fa fa-download"></i></a>
+
+      <canvas id="canvas" width="1920" height="1080"></canvas>
     </div>
   </body>
 </html>
