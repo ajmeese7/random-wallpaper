@@ -1,5 +1,5 @@
 # random-wallpaper
-Random background images for Wallpaper Engine
+Random background images from Unsplash. Has the option to convert the images to 8-bit, if the user prefers. Switch from this wallpaper to another and back to generate a new image.
 
 Available for Wallpaper Engine on Steam [here](https://steamcommunity.com/sharedfiles/filedetails/?id=1565912187).
 
