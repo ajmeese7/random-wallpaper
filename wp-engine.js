@@ -8,10 +8,31 @@ window.wallpaperPropertyListener = {
         // TODO: Add a way to generate a new wallpaper without switching...
         var eightBit = properties.eightBit.value;
         var pixelDensity = properties.pixelDensity.value;
-        if (eightBit) {
-          randomWallpaper(pixelDensity);
-        } else {
-          randomWallpaper(100);
+        // IDEA: Have this value be passed to pixelation-setting function when changed
+          // But how to monitor for change?
+
+        if (pixelDensity) {
+          setPixelation(pixelDensity);
         }
+
+        if (eightBit) {
+          setPixelation(pixelDensity);
+          randomWallpaper();
+        } else {
+          setPixelation(100);
+          randomWallpaper();
+        }
+
+        /*if (hasBeenRun()) {
+          if (eightBit) {
+            setPixelation(pixelDensity);
+            changeWallpaper();
+          } else {
+            setPixelation(100);
+            changeWallpaper();
+          }
+        } else {
+          firstRun();
+        }*/
     }
 };

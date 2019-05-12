@@ -33,7 +33,7 @@
         border-radius: 50%;
         color: white;
         padding: 9px 10px;
-        cursor: pointer;
+        cursor: pointer; /* TODO: Create bug report that this does not work */
         font-size: 20px;
         position: absolute;
         bottom: 0;
@@ -51,11 +51,12 @@
   <body>
     <div id="container">
       <!-- IDEA: Add a toggle for whether or not to display the button...
-          also make the button draggable, or 'adjustable' -->
+          also make the button draggable, or 'adjustable'; somehow persistant? -->
       <a class="btn" id="button"><i class="fas fa-sync-alt"></i></a>
       <canvas id="canvas"></canvas>
     </div>
 
+    <!-- TODO: Submit request for improved debugging environment (ex. console) -->
     <script src="randomWallpaper.js"></script>
   </body>
 </html>
