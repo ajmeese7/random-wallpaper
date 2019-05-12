@@ -20,7 +20,5 @@ function randomWallpaper() {
   img.onload = function() {
     eightBit(document.getElementById('canvas'), img, pixelation);
   };
-
-  // IDEA: Save the link from image to WP Engine property after it has been displayed?
 }
 

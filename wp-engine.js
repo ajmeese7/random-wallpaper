@@ -17,17 +17,3 @@ window.wallpaperPropertyListener = {
         }
     }
 };
-
-// IDEA: Have this value be passed to pixelation-setting function when changed
-  // But how to monitor for change?
-/*
-var eightBit, pixelDensity;
-function getPixelation() {
-  alert("eightBit:" + eightBit + ", pixelDensity: " + pixelDensity);
-  if (eightBit) {
-    return pixelDensity;
-  } else {
-    return 100;
-  }
-}
-*/
