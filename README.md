@@ -19,3 +19,4 @@ user's system.
 - Make the theme color be picked from the random image automatically.
 - Add the option to choose the resolution of the images retrieved, ex. 4K vs 1920x1080.
     - Add several other API options, such as images from a key word.
+- Option to refresh the wallpaper every `x` amount of time.
