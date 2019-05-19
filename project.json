@@ -1,7 +1,7 @@
 {
 	"workshopid": 1565912187,
 	"contentrating" : "Everyone",
-	"description" : "Random background images from Unsplash. Has the option to convert the images to 8-bit, if you prefer. Switch from this wallpaper to another and back if you want to generate a new image.",
+	"description" : "Random background images from Unsplash. Has the option to convert the images to 8-bit, if you prefer. \nPlease see the GitHub repository here for an up-to-date list on bugs and potential future ideas: https://github.com/ajmeese7/random-wallpaper. If you have any unlisted feature requests, I encourage you to make an issue on the repository and I will look into it.",
 	"file" : "index.html",
 	"general" :
 	{
@@ -15,12 +15,33 @@
 			},
 			"pixelDensity" :
 			{
-				 "text" : "Pixel Density",
-				 "type" : "slider",
-				 "value" : 50,
-				 "min" : 1,
-				 "max" : 100,
-				 "editable" : true
+				"condition" : "eightBit.value == true",
+				"text" : "Pixel Density",
+				"type" : "slider",
+				"value" : 50,
+				"min" : 1,
+				"max" : 100,
+				"editable" : true
+			},
+			"resolution": {
+				"options": 
+				[
+					{
+						"label": "1920 x 1080", 
+						"value": "1920x1080"
+					},
+					{
+						"label": "3840 x 2160",
+						"value": "3840x2160"
+					},
+					{
+						"label": "4096 x 2160",
+						"value": "4096x2160"
+					}
+				],
+				"text": "Resolution",
+				"type": "combo",
+				"value": "1920x1080"
 			},
 			"schemecolor" :
 			{

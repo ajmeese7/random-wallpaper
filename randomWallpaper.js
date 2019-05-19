@@ -7,15 +7,20 @@ function setPixelation(pixelDensity) {
   pixelation = pixelDensity;
 }
 
+var resolution = "1920x1080";
+function setResolution(res) {
+  resolution = res;
+}
+
 function randomWallpaper() {
   // The Math.random() is required to prevent the query from "helping" you.
   // See: https://github.com/unsplash/unsplash-source-js/issues/9
-  var url = "https://source.unsplash.com/random/1920x1080?sig=" + Math.random();
+  var url = "https://source.unsplash.com/random/" + resolution + "?sig=" + Math.random();
   var img = new Image();
 
   img.src = url;
-  img.width = "1920";
-  img.height = "1080";
+  img.width = screen.width;
+  img.height = screen.height;
 
   img.onload = function() {
     eightBit(document.getElementById('canvas'), img, pixelation);
